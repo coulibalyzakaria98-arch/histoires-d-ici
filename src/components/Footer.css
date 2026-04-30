@@ -1,0 +1,62 @@
+.footer {
+  background: #2C221B; /* Brun Cacao Profond */
+  color: #FDF8F0;
+  padding: 0;
+  position: relative;
+}
+
+.footer-flag-line {
+  display: flex;
+  height: 8px;
+  width: 100%;
+}
+
+.f-orange { flex: 1; background-color: #F77F00; }
+.f-white { flex: 1; background-color: #FFFFFF; }
+.f-green { flex: 1; background-color: #009B48; }
+
+.footer-content {
+  padding: 6rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-brand h3 {
+  color: #FDF8F0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  color: #E8DED0;
+  max-width: 400px;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.footer-links a {
+  color: #E8DED0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #E0A343;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(232, 222, 208, 0.1);
+  width: 100%;
+  color: rgba(232, 222, 208, 0.5);
+  font-size: 0.85rem;
+}

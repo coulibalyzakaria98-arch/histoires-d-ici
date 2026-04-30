@@ -1,0 +1,69 @@
+.enhanced-player {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 20px 50px rgba(44, 34, 27, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.visualizer-waves {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 60px;
+}
+
+.wave-bar {
+  width: 4px;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+.player-main-controls {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.play-hex-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.ctrl-btn {
+  color: #5A4D44;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.ctrl-btn:hover {
+  opacity: 1;
+}
+
+.enhanced-progress-bar {
+  width: 100%;
+}
+
+.track-bg {
+  height: 4px;
+  background: #E8DED0;
+  border-radius: 2px;
+  width: 100%;
+  position: relative;
+}
+
+.fill-bar {
+  height: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+}

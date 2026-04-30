@@ -1,0 +1,136 @@
+.immersive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-card {
+  height: 180px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 34, 27, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay span {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+/* Lightbox */
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.98);
+  z-index: 3000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.lb-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.lb-close:hover { opacity: 1; }
+
+.lb-main-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  flex: 1;
+  justify-content: center;
+}
+
+.lb-image {
+  max-width: 80%;
+  max-height: 70vh;
+  border-radius: 1rem;
+  box-shadow: 0 0 60px rgba(0,0,0,0.5);
+}
+
+.lb-nav-btn {
+  color: white;
+  opacity: 0.3;
+  transition: all 0.3s;
+}
+
+.lb-nav-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.lb-thumbnails {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  margin-top: auto;
+}
+
+.lb-thumb-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.lb-thumb-item.active {
+  opacity: 1;
+  border-color: #C26B3A;
+  transform: scale(1.1);
+}
+
+.lb-thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .lb-nav-btn { display: none; }
+  .lb-image { max-width: 100%; }
+}

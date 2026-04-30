@@ -1,0 +1,115 @@
+.qrcode-container {
+  margin-top: 1rem;
+}
+
+.qr-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+  color: var(--secondary);
+  transition: all 0.3s;
+}
+
+.qr-toggle-btn:hover {
+  background: rgba(255,255,255,0.1);
+  color: var(--primary);
+  border-color: var(--accent);
+}
+
+.qr-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.qr-modal-content {
+  background: white;
+  color: black;
+  padding: 3rem;
+  border-radius: 2rem;
+  max-width: 450px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  animation: modalScale 0.3s ease-out;
+}
+
+@keyframes modalScale {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #a1a1aa;
+}
+
+.qr-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.qr-header p {
+  color: #71717a;
+  margin-bottom: 2rem;
+}
+
+.qr-code-wrapper {
+  background: white;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.qr-instructions {
+  color: #3f3f46;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  transition: opacity 0.3s;
+}
+
+.download-btn:hover {
+  opacity: 0.8;
+}
+
+@media print {
+  .qr-modal-overlay {
+    background: white;
+    position: static;
+  }
+  .close-modal, .download-btn, .qr-toggle-btn {
+    display: none;
+  }
+  .qr-modal-content {
+    box-shadow: none;
+    padding: 0;
+  }
+}

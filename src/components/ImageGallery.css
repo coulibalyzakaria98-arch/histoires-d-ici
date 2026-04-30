@@ -1,0 +1,90 @@
+.gallery-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-thumb {
+  height: 250px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 34, 27, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  color: white;
+  font-size: 2rem;
+}
+
+.gallery-thumb:hover .thumb-overlay {
+  opacity: 1;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  backdrop-filter: blur(10px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: white;
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 80vh;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}
+
+.lightbox-nav {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-btn {
+  color: white;
+  background: rgba(255,255,255,0.1);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: rgba(255,255,255,0.2);
+}

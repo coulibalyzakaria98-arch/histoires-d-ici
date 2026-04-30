@@ -1,0 +1,123 @@
+.site-header-container {
+  margin-bottom: 5rem;
+}
+
+.back-btn-premium {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #5A4D44;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.back-btn-premium:hover {
+  color: #C26B3A;
+}
+
+.glass-hero-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 4rem;
+  padding: 5rem 2rem;
+  box-shadow: 0 30px 80px rgba(44, 34, 27, 0.08);
+}
+
+.glass-blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.blob-1 { top: -100px; right: -50px; }
+.blob-2 { bottom: -100px; left: -50px; }
+
+.glass-content-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.main-site-emoji {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.site-main-title {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: #2C221B;
+  margin-bottom: 0.8rem;
+}
+
+.site-main-tagline {
+  font-size: 1.5rem;
+  color: #5A4D44;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.site-location-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.header-stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.header-mini-badge {
+  background: white;
+  padding: 0.8rem 1.8rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.h-badge-val {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #2C221B;
+}
+
+.h-badge-lab {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #5A4D44;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .site-main-title { font-size: 2.5rem; }
+  .site-main-tagline { font-size: 1.2rem; }
+  .glass-hero-card { padding: 3rem 1.5rem; border-radius: 2.5rem; }
+  .header-stats-row { gap: 1rem; }
+  .header-mini-badge { min-width: 100px; padding: 0.6rem 1rem; }
+}

@@ -1,0 +1,248 @@
+.site-detail-immersive {
+  background: #FDF8F0;
+  min-height: 100vh;
+}
+
+.detail-main-layout {
+  padding: 4rem 1.5rem 10rem;
+  max-width: 1100px;
+}
+
+.back-link-premium {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #5A4D44;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+.back-link-premium:hover {
+  color: #C26B3A;
+}
+
+/* Stats Section */
+.stats-container-premium {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.stat-card-premium {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-card-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.stat-card-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5A4D44;
+  opacity: 0.6;
+}
+
+/* Main Content Layout */
+.content-split-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 4rem;
+  margin-bottom: 8rem;
+}
+
+.premium-section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2C221B;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section-header-flex .premium-section-title {
+  margin-bottom: 0;
+}
+
+.premium-description {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #2C221B;
+  font-weight: 300;
+  margin-bottom: 6rem;
+}
+
+/* Story Highlight */
+.story-box-premium {
+  background: white;
+  padding: 4rem;
+  border-radius: 3rem;
+  box-shadow: 0 20px 60px rgba(44,34,27,0.06);
+  border: 1px solid #E8DED0;
+  position: relative;
+}
+
+.narrator-mention {
+  color: #C26B3A;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.story-content-premium p {
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #2C221B;
+  margin-bottom: 2.5rem;
+  font-family: 'Georgia', serif;
+}
+
+/* Sidebar Points */
+.key-points-sidebar {
+  padding: 2.5rem;
+  position: sticky;
+  top: 120px;
+}
+
+.sidebar-mini-title {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #2C221B;
+}
+
+.premium-key-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.premium-key-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5A4D44;
+}
+
+.point-bullet { font-size: 1.5rem; line-height: 1; }
+
+/* Audio Section */
+.audio-section-premium {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.section-center-header {
+  margin-bottom: 4rem;
+}
+
+.section-center-header .premium-section-title {
+  justify-content: center;
+}
+
+.section-center-header p {
+  color: #5A4D44;
+  margin-top: 0.5rem;
+}
+
+/* Gallery Section */
+.gallery-section-premium {
+  margin-bottom: 8rem;
+}
+
+.section-hint {
+  font-size: 0.9rem;
+  color: #5A4D44;
+  opacity: 0.6;
+  margin-top: -1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Practical Info Grid */
+.practical-premium-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.practical-item-premium {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.practical-icon { font-size: 2rem; }
+
+.practical-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  opacity: 0.8;
+}
+
+.practical-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2C221B;
+}
+
+/* Final Quote */
+.final-quote-section {
+  padding: 10rem 0 6rem;
+  text-align: center;
+}
+
+.premium-quote {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: #5A4D44;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.quote-separator {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto;
+  border-radius: 2px;
+  opacity: 0.3;
+}
+
+@media (max-width: 1024px) {
+  .content-split-layout { grid-template-columns: 1fr; }
+  .sidebar-col { display: none; }
+}
+
+@media (max-width: 768px) {
+  .detail-main-layout { padding-top: 2rem; }
+  .premium-description { font-size: 1.2rem; }
+  .stat-card-value { font-size: 2rem; }
+  .story-box-premium { padding: 2rem; }
+  .premium-quote { font-size: 1.8rem; }
+}
