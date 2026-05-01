@@ -5,8 +5,8 @@
       "destination": "/index.html"
     }
   ],
-  "buildCommand": "node ./node_modules/vite/bin/vite.js build",
+  "buildCommand": "npx vite build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "installCommand": "npm install --no-audit --no-fund"
+  "installCommand": "npm install"
 }
