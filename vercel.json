@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/"
     }
   ],
-  "buildCommand": "npx vite build",
+  "installCommand": "npm ci || npm install",
+  "buildCommand": "npx --yes vite build",
   "outputDirectory": "dist",
-  "framework": "vite",
-  "installCommand": "npm install"
+  "framework": "vite"
 }
